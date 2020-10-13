@@ -10,47 +10,60 @@
             and your choice of a hand-picked, premium melon.</p>
 
     </head>
+
     <body>
 
-    <h2>Melon Options</h2>
+        <h2>Melon Options</h2>
 
-    <p>Choose from one of these melons:</p>
+        <p>Choose from one of these melons:</p>
 
-    <table Melon Info >
-        <tr>
-            <td>Watermelon</td> <td>$1,200.00</td>
-        </tr>
-        <tr>
-            <td>Canteloupe</td> <td>$400.00</td>
-        </tr>
-        <tr>
-            <td>Honeydew</td> <td>$1,750,00.00</td>
-        </tr> 
-    </table>
+        <table Melon Info >
+            <tr>
+                <td>Watermelon</td> <td>$1,200.00</td>
+            </tr>
+            <tr>
+                <td>Canteloupe</td> <td>$400.00</td>
+            </tr>
+            <tr>
+                <td>Honeydew</td> <td>$1,750,00.00</td>
+            </tr> 
+        </table>
 
-    <h2>Order Form</h2>
+        <h2>Order Form</h2>
     
-<form>
-<label>Name</label>
-<input type= "text" name="name">
-
-Who are we sending this to?
-
-Choose a melon
-Watermleon
-Canteloupe
-Honeydew
-
-When should we deliver?
-Morning
-Evening
-Any time
-
-Enter your message:
-</form>
-
-Subscribe to our newsletter
-Yes
+        <form>
+            <label>Name</label>
+            <input type= "text" name="name">
+            <br>
+            <label>Who are we sending this to?</label>
+            <input type= "text name" name="recipient">
+            <br>
+            Choose a melon 
+            <select name = "melon">
+            <option value="watermelon">Watermelon</option>
+            <option value="canteloupe">Canteloupe</option>
+            <option value="honeydew">Honeydew</option>
+            </select>
+            <br>
+            When should we deliver?
+            <input type="radio" name="morning" value="am">
+            <label>Morning</label>
+            <input type="radio" name="evening" value="pm">
+            <label>Evening</label>
+            <input type="radio" name="any time" value="anytime">
+            <label>Any time</label>
+            <br>
+            Enter your message: 
+            <br>
+            <textarea name="message"></textarea>
+            </form>
+            <br>
+            Subscribe to our newsletter
+            <input type="checkbox" name="subscribe" value="yes">
+            <label>Yes</label>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
     </body>
 
 </html>
